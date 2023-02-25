@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --background-color: #000000;
+  --text-color: #E1E1E6;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 15vh 16vw;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+main {
+  color: white;
+}
+
+tbody img {
+  width: 5rem;
+}
