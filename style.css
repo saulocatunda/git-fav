@@ -7,14 +7,22 @@
 :root {
   font-size: 62.5%;
   --background-color: #000000;
-  --text-color: #E1E1E6;
+  --text-color: #e1e1e6;
+  --table-header-color: #092d38;
+  --table-dark-bg-color: rgba(6, 22, 27, 0.5);
+  --table-light-bg-color: #06181c;
+}
+
+main {
+  color: white;
+  margin: 0 auto;
 }
 
 body {
   font-size: 1.6rem;
   background-color: var(--background-color);
   color: var(--text-color);
-  margin: 15vh 16vw;
+  margin: 10vh 11vw;
 }
 
 header nav {
@@ -24,10 +32,37 @@ header nav {
   gap: 1rem;
 }
 
-main {
-  color: white;
+table {
+  width: 100%;
+  text-align: left;
+}
+
+table td:first-child {
+  
 }
 
 tbody img {
-  width: 5rem;
+  width: 5.6rem;
+}
+
+table thead tr th {
+  width: 3fr;
+}
+
+table thead tr th {
+  background-color: var(--table-header-color);
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: var(--table-dark-bg-color);
+}
+
+table tbody tr:nth-child(even) {
+  background-color: var(--table-light-bg-color);
+}
+
+table a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
 }
