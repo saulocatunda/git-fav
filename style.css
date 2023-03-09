@@ -32,14 +32,17 @@ header nav {
   gap: 1rem;
 }
 
+/* Table */
+
 table {
   width: 100%;
   text-align: left;
 }
 
-table td:first-child {
-  
+table td {
+margin: 2.8rem 4rem;
 }
+
 
 tbody img {
   width: 5.6rem;
