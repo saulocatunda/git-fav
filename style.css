@@ -6,16 +6,38 @@
 
 :root {
   font-size: 62.5%;
+  --hue: 194;
   --background-color: #000000;
   --text-color: #e1e1e6;
-  --table-header-color: #092d38;
-  --table-dark-bg-color: rgba(6, 22, 27, 0.5);
-  --table-light-bg-color: #06181c;
+  --table-header-color: hsl(var(--hue), 72%, 13%);
+  --table-dark-bg-color: hsla(var(--hue), 64%, 6%, 0.5);
+  --table-light-bg-color: hsl(var(--hue), 65%, 7%);
 }
 
-main {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#app {
   color: white;
   margin: 0 auto;
+  padding: 2rem;
+  max-width: 70rem;
+}
+
+/*Reutilizável. Screen Reader Only*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 body {
@@ -23,13 +45,6 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 10vh 11vw;
-}
-
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
 }
 
 /* Table */
@@ -40,9 +55,8 @@ table {
 }
 
 table td {
-margin: 2.8rem 4rem;
+  margin: 2.8rem 4rem;
 }
-
 
 tbody img {
   width: 5.6rem;
