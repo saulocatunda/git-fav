@@ -32,10 +32,12 @@ body {
   flex-direction: column;
   color: white;
   max-width: 90rem;
-  height: 100vh;
+  min-width: 50vw;
+  height: 100%;
   justify-content: center;
-  margin: 10rem auto;
+  margin: 5% auto;
 }
+
 
 /*Reutilizável. Screen Reader Only*/
 .sr-only {
@@ -78,6 +80,8 @@ header #input-search {
   border: none;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  width: 23vw;
+  margin-left: 2rem;
 }
 
 header button {
@@ -107,14 +111,14 @@ header button {
 
 table th {
   text-align: left;
-  padding: 1.2rem;
+  padding: .2rem;
   font-size: 1.7rem;
   font-weight: 700;
   line-height: 3.2rem;
 }
 
 table td {
-  padding: 1rem 1rem;
+  padding: 1rem .2rem;
 }
 
 td .user {
@@ -152,7 +156,7 @@ tbody td .user img {
   border-radius: 50%;
 }
 
-table tbody td {
+table tbody td:first-child {
   padding: 1rem 2rem;
 }
 
